@@ -118,6 +118,38 @@ body {
   box-shadow: none;
 }
 
+.interactive a {
+  position: relative;
+  z-index: 10;
+}
+
+.btn-github {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  border: var(--border-width) solid var(--ink-black);
+  background: var(--off-white);
+  color: var(--ink-black);
+  text-decoration: none;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  box-shadow: 2px 2px 0px var(--ink-black);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.btn-github:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px var(--ink-black);
+  background: var(--primary-yellow);
+}
+
+.btn-github:active {
+  transform: translate(1px, 1px);
+  box-shadow: none;
+}
+
 /* Grid System */
 .grid-12 {
   display: grid;
