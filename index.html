@@ -2,260 +2,405 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rohit Nyaupane | Portfolio</title>
-    <meta name="description"
-        content="Personal portfolio of Rohit Nyaupane, CSIT student and aspiring Software & AI/ML Engineer.">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rohit Nyaupane | Portfolio</title>
+  <meta name="description"
+    content="Personal portfolio of Rohit Nyaupane, CSIT student and aspiring Software & AI/ML Engineer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="perspective-stage" id="stage">
 
-        <header class="top-bar">
-            <div class="circles">
-                <div class="circle bg-red"></div>
-                <div class="circle bg-yellow"></div>
-                <div class="circle bg-blue"></div>
-            </div>
-            <nav class="nav-links">
-                <a href="#about" class="nav-link interactive border-red">ABOUT</a>
-                <a href="#projects" class="nav-link interactive border-blue">PROJECTS</a>
-                <a href="#contact" class="nav-link interactive border-yellow">CONTACT</a>
-            </nav>
-        </header>
+  <!-- ─── PROGRESS DOTS ────────────────────────────── -->
+  <nav class="flow-dots" id="flowDots" aria-label="Section navigation">
+    <button class="flow-dot active" id="dot-0" aria-label="Go to Hero section"></button>
+    <button class="flow-dot" id="dot-1" aria-label="Go to About section"></button>
+    <button class="flow-dot" id="dot-2" aria-label="Go to Skills section"></button>
+    <button class="flow-dot" id="dot-3" aria-label="Go to Projects section"></button>
+    <button class="flow-dot" id="dot-4" aria-label="Go to Contact section"></button>
+  </nav>
 
-        <section class="hero grid-12">
-            <div class="hero-left">
-                <h1 class="headline-large">ROHIT<br>NYAUPANE</h1>
-                <div class="status-blocks">
-                    <div class="status-block bg-white border-red shadow-std interactive">CSIT STUDENT</div>
-                    <div class="status-block bg-white border-blue shadow-std interactive">ASPIRING SOFTWARE & AI/ML
-                        ENTHUSIAST</div>
-                </div>
-                <div style="margin-top: 1rem;">
-                    <a href="#projects" class="nav-link interactive bg-white border-yellow shadow-std"
-                        style="display: inline-block;">VIEW PROJECTS</a>
-                </div>
+  <!-- ─── FLOW ART WRAPPER ─────────────────────────── -->
+  <div class="flow-art" id="flowArt" aria-label="My Portfolio">
 
-            </div>
-            <div class="hero-right">
-                <img src="rohit2.jpg"
-                    alt="Rohit Nyaupane" class="hero-image shadow-std interactive">
-            </div>
-        </section>
-        <section id="about">
-            <hr class="divider">
-            <div class="grid-12 about-grid">
-                <div class="left">
-                    <h2 class="subheader">ABOUT</h2>
-                </div>
-                <div class="right">
-                    <p>CSIT student with biology roots but with a strong interest in Artificial Intelligence and Machine
-                        Learning. Actively
-                        participating in tech communities, hackathons, and leadership roles. Believer of "work smart not
-                        hard".</p>
-                </div>
-            </div>
-        </section>
+    <!-- ─── SPACER so the stack has room to animate ─── -->
+    <div class="flow-spacer" id="flowSpacer"></div>
 
-        <section id="skills">
-            <h2 class="subheader section-label">SKILLS</h2>
-            <div class="skills-grid">
-                <div class="skill-card bg-white border-blue shadow-std interactive">
-                    <h3 style="display: flex; align-items: center; gap: 0.5rem;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="16 18 22 12 16 6"></polyline>
-                            <polyline points="8 6 2 12 8 18"></polyline>
-                        </svg>
-                        PROGRAMMING
-                    </h3>
-                    <ul>
-                        <li><img src="https://cdn.simpleicons.org/c" width="18" height="18" alt="C"> C Programming</li>
-                        <li><img src="https://cdn.simpleicons.org/html5" width="18" height="18" alt="HTML5"> HTML/CSS
-                        </li>
-                        <li><img src="https://cdn.simpleicons.org/javascript" width="18" height="18" alt="JavaScript">
-                            JavaScript (Learning)</li>
-                        <li><img src="https://cdn.simpleicons.org/python" width="18" height="18" alt="Python"> Python
-                        </li>
-                    </ul>
-                </div>
-                <div class="skill-card bg-white border-yellow shadow-std interactive">
-                    <h3 style="display: flex; align-items: center; gap: 0.5rem;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                            <line x1="3" y1="9" x2="21" y2="9"></line>
-                            <line x1="9" y1="21" x2="9" y2="9"></line>
-                        </svg>
-                        FRAMEWORKS & LIBRARIES
-                    </h3>
-                    <ul>
-                        <li><img src="https://cdn.simpleicons.org/tailwindcss" width="18" height="18"
-                                alt="Tailwind CSS"> Tailwind CSS</li>
-                        <li><img src="https://cdn.simpleicons.org/bootstrap" width="18" height="18" alt="Bootstrap">
-                            Bootstrap</li>
-                        <li><img src="https://cdn.simpleicons.org/fastapi" width="18" height="18" alt="FastAPI"> FastAPI
-                        </li>
-                        <li><img src="https://cdn.simpleicons.org/scikitlearn" width="18" height="18"
-                                alt="Scikit-Learn"> Scikit-Learn</li>
-                    </ul>
-                </div>
-                <div class="skill-card bg-white border-red shadow-std interactive">
-                    <h3 style="display: flex; align-items: center; gap: 0.5rem;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path
-                                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
-                            </path>
-                        </svg>
-                        TOOLS
-                    </h3>
-                    <ul>
-                        <li><img src="https://cdn.simpleicons.org/github" width="18" height="18" alt="GitHub"> Git &
-                            GitHub</li>
-                        <li><img src="https://cdn.simpleicons.org/arduino" width="18" height="18" alt="Arduino"> Arduino
-                            (Basic IoT)</li>
-                        <li><img src="https://cdn.simpleicons.org/postman" width="18" height="18" alt="Postman"> Postman
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+    <!-- ═══════════════════════════════════════════════
+         CARD 1 · HERO / INTRO
+         background: #fd5200  color: #fff
+    ════════════════════════════════════════════════ -->
+    <div class="flow-section" id="card-hero" data-index="0" style="--card-bg:#fd5200; --card-color:#fff;">
+      <div class="flow-inner">
 
-        <section id="projects">
-            <h2 class="subheader section-label">PROJECTS</h2>
-            <div class="projects-grid">
-                <div class="project-card shadow-std interactive">
-                    <h3>RFID-BASED ATTENDANCE SYSTEM</h3>
-                    <p>IoT attendance using RFID + Arduino UNO. Automates tracking with RFID cards.</p>
-                    <div class="pills">
-                        <span class="pill bg-white border-yellow">Arduino</span>
-                        <span class="pill bg-white border-blue">C Programming</span>
-                    </div>
-                    <div style="margin-top: 1rem;">
-                        <a href="#" class="btn-github">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path
-                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                </path>
-                            </svg>
-                            GitHub Repo
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card shadow-std interactive">
-                    <h3>PORTFOLIO WEBSITE</h3>
-                    <p>Responsive personal portfolio. Clean UI, mobile-first.</p>
-                    <div class="pills">
-                        <span class="pill bg-white border-red">HTML</span>
-                        <span class="pill bg-white border-yellow">CSS</span>
-                        <span class="pill bg-white border-blue">Tailwind</span>
-                    </div>
-                    <div style="margin-top: 1rem;">
-                        <a href="https://github.com/rohit-496/portfolio#" target="_blank" rel="noopener noreferrer" class="btn-github">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path
-                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                </path>
-                            </svg>
-                            GitHub Repo
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- top label -->
+        <p class="flow-label">01 — Who I Am</p>
+        <hr class="flow-hr">
 
-        <section id="experience">
-            <h2 class="subheader section-label">EXPERIENCE</h2>
-            <div class="exp-list">
-                <div class="exp-item shadow-std interactive">
-                    <span>PR Lead – Code for Change</span>
-                    <span>2025–2026</span>
-                </div>
-                <div class="exp-item shadow-std interactive">
-                    <span>General Member – Code for Change</span>
-                    <span>2024–2025</span>
-                </div>
-                <div class="exp-item shadow-std interactive">
-                    <span>Conducted Open Source Awareness Program</span>
-                    <span>At college</span>
-                </div>
-            </div>
-        </section>
+        <!-- giant name -->
+        <h1 class="flow-heading">ROHIT<br>NYAUPANE</h1>
 
-        <section id="achievements">
-            <h2 class="subheader section-label">ACHIEVEMENTS</h2>
-            <div class="projects-grid">
-                <div class="project-card shadow-std interactive bg-white">
-                    <h3>MLH HACKATHON</h3>
-                    <p>Participant (1-Day Event)</p>
-                </div>
-                <div class="project-card shadow-std interactive bg-white">
-                    <h3>CODEFEST 2025</h3>
-                    <p>Top 10 Finalist</p>
-                </div>
-            </div>
-        </section>
+        <hr class="flow-hr">
 
-        <section id="contact">
-            <h2 class="subheader section-label">CONTACT</h2>
-            <div class="contact-grid">
-                <a href="mailto:rohitbutwal1@gmail.com"
-                    class="contact-card bg-white border-yellow shadow-std interactive"
-                    style="text-decoration:none; color:inherit;">
-                    <div class="arrow">→</div>
-                    <div class="icon"><img src="https://cdn.simpleicons.org/gmail" width="24" height="24" alt="Email">
-                    </div>
-                    <h3>EMAIL<br></h3>
-                </a>
-                <a href="https://github.com/rohit-496" target="_blank" rel="noopener noreferrer" class="contact-card bg-white border-blue shadow-std interactive"
-                    style="text-decoration:none; color:inherit;">
-                    <div class="arrow">→</div>
-                    <div class="icon"><img src="https://cdn.simpleicons.org/github" width="24" height="24" alt="GitHub">
-                    </div>
-                    <h3>GITHUB<br></h3>
-                </a>
-                <a href="https://www.linkedin.com/in/rohit-nyaupane-676817339" target="_blank" rel="noopener noreferrer" class="contact-card bg-white border-red shadow-std interactive"
-                    style="text-decoration:none; color:inherit;">
-                    <div class="arrow">→</div>
-                    <div class="icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                        </svg>
-                    </div>
-                    <h3>LINKEDIN<br></h3>
-                </a>
-                <a href="https://wa.me/9765310988" class="contact-card bg-white shadow-std interactive"
-                    style="text-decoration:none; color:inherit;">
-                    <div class="arrow">→</div>
-                    <div class="icon"><img src="https://cdn.simpleicons.org/whatsapp" width="24" height="24"
-                            alt="WhatsApp"></div>
-                    <h3>WHATSAPP<br></h3>
-                </a>
-            </div>
-        </section>
-
-    </div>
-
-    <footer>
-        <div class="footer-inner" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-            <h2 style="font-size: clamp(20px, 4vw, 32px); margin-bottom: 1rem; letter-spacing: 0.1em; color: var(--off-white); text-align: center;">
-                ROHIT<span style="color: var(--primary-yellow);">.</span>NYAUPANE
-            </h2>
-            <div class="footer-badges" style="display: flex; justify-content: center;">
-                <span class="status-block bg-black border-yellow shadow-std" style="color: var(--off-white); font-size: 0.8rem; padding: 0.4rem 1.5rem;">
-                    MADE WITH ❤️ &nbsp; | &nbsp; © 2026 &nbsp; | &nbsp; ALL RIGHTS RESERVED
-                </span>
-            </div>
+        <!-- tagline blocks -->
+        <div class="hero-tags">
+          <span class="hero-tag">CSIT Student</span>
+          <span class="hero-tag">Aspiring Software &amp; AI/ML Engineer</span>
         </div>
-    </footer>
 
-    <script src="script.js"></script>
+        <!-- CTA -->
+        <div style="margin-top:clamp(2rem,4vw,4rem);">
+          <a href="#card-contact" class="flow-cta scroll-to">
+            Let's Connect <span class="cta-arrow">↓</span>
+          </a>
+          <a href="#card-projects" class="flow-cta flow-cta--ghost scroll-to" style="margin-left:1rem;">
+            View Projects
+          </a>
+        </div>
+
+        <!-- hero image -->
+        <div class="hero-photo-wrap">
+          <img src="rohit_beige.png" alt="Rohit Nyaupane" class="hero-photo">
+        </div>
+
+      </div><!-- /.flow-inner -->
+    </div><!-- /#card-hero -->
+
+
+    <!-- ═══════════════════════════════════════════════
+         CARD 2 · ABOUT ME
+         background: #000  color: #fff
+    ════════════════════════════════════════════════ -->
+    <div class="flow-section" id="card-about" data-index="1" style="--card-bg:#000; --card-color:#fff;">
+      <div class="flow-inner">
+
+        <p class="flow-label">02 — About Me</p>
+        <hr class="flow-hr">
+
+        <h2 class="flow-heading">WHO<br>AM I?</h2>
+
+        <hr class="flow-hr">
+
+        <p class="flow-body">
+          CSIT student with biology roots but a fierce passion for Artificial
+          Intelligence and Machine Learning. I actively participate in tech
+          communities, hackathons, and leadership roles — and live by the
+          motto <em>"work smart, not hard."</em>
+        </p>
+
+        <hr class="flow-hr" style="margin-top:clamp(2rem,4vw,4rem);">
+
+        <!-- quick facts sub-grid -->
+        <div class="sub-grid">
+          <div class="sub-card">
+            <p class="sub-card-label">Education</p>
+            <p class="sub-card-value">B.Sc. CSIT</p>
+          </div>
+          <div class="sub-card">
+            <p class="sub-card-label">Focus</p>
+            <p class="sub-card-value">AI / ML</p>
+          </div>
+          <div class="sub-card">
+            <p class="sub-card-label">Community</p>
+            <p class="sub-card-value">Code for Change</p>
+          </div>
+          <div class="sub-card">
+            <p class="sub-card-label">Philosophy</p>
+            <p class="sub-card-value">Work Smart</p>
+          </div>
+        </div>
+
+        <!-- Experience timeline -->
+        <hr class="flow-hr" style="margin-top:clamp(2rem,4vw,4rem);">
+        <p class="flow-label">Experience</p>
+        <div class="exp-list">
+          <div class="exp-row">
+            <span>PR Lead – Code for Change</span>
+            <span class="exp-year">2025–2026</span>
+          </div>
+          <div class="exp-row">
+            <span>General Member – Code for Change</span>
+            <span class="exp-year">2024–2025</span>
+          </div>
+          <div class="exp-row">
+            <span>Conducted Open Source Awareness Program</span>
+            <span class="exp-year">At college</span>
+          </div>
+        </div>
+
+      </div>
+    </div><!-- /#card-about -->
+
+
+    <!-- ═══════════════════════════════════════════════
+         CARD 3 · SKILLS / STACK
+         background: #F5F0E8  color: #000
+    ════════════════════════════════════════════════ -->
+    <div class="flow-section" id="card-skills" data-index="2" style="--card-bg:#F5F0E8; --card-color:#000;">
+      <div class="flow-inner">
+
+        <p class="flow-label">03 — My Stack</p>
+        <hr class="flow-hr">
+
+        <h2 class="flow-heading">SKILLS &amp;<br>TOOLS</h2>
+
+        <hr class="flow-hr">
+
+        <p class="flow-body">Technologies and tools I work with.</p>
+
+        <hr class="flow-hr" style="margin-top:clamp(2rem,4vw,4rem);">
+
+        <!-- skills sub-grid -->
+        <div class="skills-flex">
+
+          <div class="skill-block">
+            <p class="skill-block-title">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+              Programming
+            </p>
+            <ul class="skill-list">
+              <li><img src="https://cdn.simpleicons.org/c" width="16" height="16" alt="C"> C Programming</li>
+              <li><img src="https://cdn.simpleicons.org/html5" width="16" height="16" alt="HTML5"> HTML / CSS</li>
+              <li><img src="https://cdn.simpleicons.org/javascript" width="16" height="16" alt="JS"> JavaScript
+                <em>(Learning)</em></li>
+              <li><img src="https://cdn.simpleicons.org/python" width="16" height="16" alt="Python"> Python</li>
+            </ul>
+          </div>
+
+          <div class="skill-block">
+            <p class="skill-block-title">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="3" y1="9" x2="21" y2="9"></line>
+                <line x1="9" y1="21" x2="9" y2="9"></line>
+              </svg>
+              Frameworks &amp; Libraries
+            </p>
+            <ul class="skill-list">
+              <li><img src="https://cdn.simpleicons.org/tailwindcss" width="16" height="16" alt="Tailwind"> Tailwind CSS
+              </li>
+              <li><img src="https://cdn.simpleicons.org/bootstrap" width="16" height="16" alt="Bootstrap"> Bootstrap
+              </li>
+              <li><img src="https://cdn.simpleicons.org/fastapi" width="16" height="16" alt="FastAPI"> FastAPI</li>
+              <li><img src="https://cdn.simpleicons.org/scikitlearn" width="16" height="16" alt="Scikit-Learn">
+                Scikit-Learn</li>
+            </ul>
+          </div>
+
+          <div class="skill-block">
+            <p class="skill-block-title">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path
+                  d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                </path>
+              </svg>
+              Tools
+            </p>
+            <ul class="skill-list">
+              <li><img src="https://cdn.simpleicons.org/github" width="16" height="16" alt="GitHub"> Git &amp; GitHub
+              </li>
+              <li><img src="https://cdn.simpleicons.org/arduino" width="16" height="16" alt="Arduino"> Arduino
+                <em>(Basic IoT)</em></li>
+              <li><img src="https://cdn.simpleicons.org/postman" width="16" height="16" alt="Postman"> Postman</li>
+            </ul>
+          </div>
+
+        </div><!-- /.skills-flex -->
+
+        <!-- Achievements -->
+        <hr class="flow-hr" style="margin-top:clamp(2rem,4vw,4rem);">
+        <p class="flow-label">Achievements</p>
+        <div class="skills-flex">
+          <div class="achieve-card">
+            <p class="achieve-title">MLH Hackathon</p>
+            <p class="achieve-sub">Participant · 1-Day Event</p>
+          </div>
+          <div class="achieve-card">
+            <p class="achieve-title">CodeFest 2025</p>
+            <p class="achieve-sub">Top 10 Finalist</p>
+          </div>
+        </div>
+
+      </div>
+    </div><!-- /#card-skills -->
+
+
+    <!-- ═══════════════════════════════════════════════
+         CARD 4 · PROJECTS
+         background: #1A3DE8  color: #fff
+    ════════════════════════════════════════════════ -->
+    <div class="flow-section" id="card-projects" data-index="3" style="--card-bg:#1A3DE8; --card-color:#fff;">
+      <div class="flow-inner">
+
+        <p class="flow-label">04 — What I've Built</p>
+        <hr class="flow-hr">
+
+        <h2 class="flow-heading">MY<br>PROJECTS</h2>
+
+        <hr class="flow-hr">
+
+        <p class="flow-body">A selection of things I've built and shipped.</p>
+
+        <hr class="flow-hr" style="margin-top:clamp(2rem,4vw,4rem);">
+
+        <div class="projects-flex">
+
+          <!-- Project 1 -->
+          <div class="project-block">
+            <p class="project-num">01</p>
+            <h3 class="project-name">RFID-BASED ATTENDANCE SYSTEM</h3>
+            <p class="project-desc">
+              IoT attendance using RFID + Arduino UNO. Automates tracking
+              with RFID cards — replacing manual roll-calls with instant,
+              error-free logging.
+            </p>
+            <div class="project-pills">
+              <span class="project-pill">Arduino</span>
+              <span class="project-pill">C Programming</span>
+              <span class="project-pill">IoT</span>
+            </div>
+            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                </path>
+              </svg>
+              GitHub Repo
+            </a>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-block">
+            <p class="project-num">02</p>
+            <h3 class="project-name">PORTFOLIO WEBSITE</h3>
+            <p class="project-desc">
+              Responsive personal portfolio with a scroll-driven stacked
+              card animation layout. Clean UI, mobile-first design, crafted
+              with HTML, CSS, and vanilla JS + GSAP.
+            </p>
+            <div class="project-pills">
+              <span class="project-pill">HTML</span>
+              <span class="project-pill">CSS</span>
+              <span class="project-pill">JavaScript</span>
+              <span class="project-pill">GSAP</span>
+            </div>
+            <a href="https://github.com/rohit-496/portfolio" target="_blank" rel="noopener noreferrer"
+              class="project-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                </path>
+              </svg>
+              GitHub Repo
+            </a>
+          </div>
+
+        </div><!-- /.projects-flex -->
+
+      </div>
+    </div><!-- /#card-projects -->
+
+
+    <!-- ═══════════════════════════════════════════════
+         CARD 5 · CONTACT / CTA  (last card = resting)
+         background: #000  color: #fff
+    ════════════════════════════════════════════════ -->
+    <div class="flow-section flow-section--last" id="card-contact" data-index="4"
+      style="--card-bg:#000; --card-color:#fff;">
+      <div class="flow-inner">
+
+        <p class="flow-label">05 — Say Hello</p>
+        <hr class="flow-hr">
+
+        <h2 class="flow-heading">LET'S<br>WORK</h2>
+
+        <hr class="flow-hr">
+
+        <p class="flow-body">
+          I'm always open to interesting collaborations, projects,
+          and conversations. Reach out through any of the channels below.
+        </p>
+
+        <hr class="flow-hr" style="margin-top:clamp(2rem,4vw,4rem);">
+
+        <!-- contact cards grid -->
+        <div class="contact-flex">
+
+          <a href="mailto:rohitbutwal1@gmail.com" class="contact-block" id="contact-email">
+            <span class="contact-arrow">↗</span>
+            <span class="contact-icon">
+              <img src="https://cdn.simpleicons.org/gmail/ffffff" width="28" height="28" alt="Email">
+            </span>
+            <span class="contact-label">EMAIL</span>
+            <span class="contact-value">rohitbutwal1@gmail.com</span>
+          </a>
+
+          <a href="https://github.com/rohit-496" target="_blank" rel="noopener noreferrer" class="contact-block"
+            id="contact-github">
+            <span class="contact-arrow">↗</span>
+            <span class="contact-icon">
+              <img src="https://cdn.simpleicons.org/github/ffffff" width="28" height="28" alt="GitHub">
+            </span>
+            <span class="contact-label">GITHUB</span>
+            <span class="contact-value">rohit-496</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/rohit-nyaupane-676817339" target="_blank" rel="noopener noreferrer"
+            class="contact-block" id="contact-linkedin">
+            <span class="contact-arrow">↗</span>
+            <span class="contact-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+            </span>
+            <span class="contact-label">LINKEDIN</span>
+            <span class="contact-value">rohit-nyaupane</span>
+          </a>
+
+          <a href="https://wa.me/9765310988" target="_blank" rel="noopener noreferrer" class="contact-block"
+            id="contact-whatsapp">
+            <span class="contact-arrow">↗</span>
+            <span class="contact-icon">
+              <img src="https://cdn.simpleicons.org/whatsapp/ffffff" width="28" height="28" alt="WhatsApp">
+            </span>
+            <span class="contact-label">WHATSAPP</span>
+            <span class="contact-value">+977 9765310988</span>
+          </a>
+
+        </div><!-- /.contact-flex -->
+
+        <!-- footer stamp -->
+        <hr class="flow-hr" style="margin-top:clamp(3rem,6vw,6rem);">
+        <div class="footer-stamp">
+          <span>ROHIT<span class="stamp-dot">.</span>NYAUPANE</span>
+          <span class="footer-copy">MADE WITH ❤️ &nbsp;|&nbsp; © 2026 &nbsp;|&nbsp; ALL RIGHTS RESERVED</span>
+        </div>
+
+      </div>
+    </div><!-- /#card-contact -->
+
+  </div><!-- /#flowArt -->
+
+
+  <!-- GSAP from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
